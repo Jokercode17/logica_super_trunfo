@@ -1,0 +1,1 @@
+# logica_super_trunfo
