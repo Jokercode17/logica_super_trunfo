@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Desafio Lógica Super Trunfo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🧠 Desafio de Lógica: Super Trunfo</h1>
+  
+  <div class="container">
+    <div class="instructions card">
+      <h2>📝 Pistas:</h2>
+      <ul>
+        <li>1. A carta com <strong>maior Força</strong> pertence a quem tem <strong>menor Inteligência</strong>.</li>
+        <li>2. A carta de <strong>Clara</strong> tem mais <strong>Velocidade</strong> que a de <strong>Diego</strong>.</li>
+        <li>3. A carta de <strong>Elisa</strong> tem exatamente <strong>50 pontos de Força</strong>.</li>
+        <li>4. A carta com <strong>maior Inteligência</strong> pertence à <strong>Guilherme</strong>.</li>
+      </ul>
+    </div>
+
+    <div class="card controls">
+      <label for="atributo">Escolha o atributo:</label>
+      <select id="atributo">
+        <option value="forca">Força</option>
+        <option value="velocidade">Velocidade</option>
+        <option value="inteligencia">Inteligência</option>
+      </select>
+    </div>
+
+    <div class="card guess">
+      <label for="palpite">Quem você acha que tem o Super Trunfo?</label>
+      <select id="palpite">
+        <option value="Ana">Ana</option>
+        <option value="Elisa">Elisa</option>
+        <option value="Clara">Clara</option>
+        <option value="Diego">Diego</option>
+        <option value="Guilherme">Guilherme</option>
+      </select>
+      <button onclick="verificar()">🔍 Verificar</button>
+    </div>
+
+    <div id="resultado" class="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
